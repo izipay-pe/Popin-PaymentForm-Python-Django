@@ -146,7 +146,7 @@ def checkout(request):
 ℹ️ Para más información: [Formtoken](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/javascript/guide/embedded/formToken.html)
 
 ### Visualizar formulario
-Para desplegar la pasarela, se configura la llave `public key` en el encabezado (Header) del archivo `./templates/Demo/checkout.html`. En el ejemplo la llave se extrae directamente del archivo `keys/keys.js`.
+Para desplegar la pasarela, se configura la llave `public key` en el encabezado (Header) del archivo `./templates/Demo/checkout.html`. En el ejemplo la llave se extrae directamente del archivo `keys/keys.py`.
 
 Header: 
 Se coloca el script de la libreria necesaria para importar las funciones y clases principales de la pasarela.
