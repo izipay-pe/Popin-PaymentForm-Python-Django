@@ -1,0 +1,32 @@
+{% extends 'Demo/base.html' %}
+{% load static %}
+
+{% block extrastyles %}
+{% endblock %}
+
+{% block body %}
+<section class="container" >
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <h1>Prueba pasarela</h1>
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <form id="form-pop-in" action="{% url 'formToken' %}" method="POST">
+                {% csrf_token %}
+              <input type="hidden" name="mode" value="incrustado">
+              <button class="btn btn-primary" type="submit">Realizar Pago</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block extrajs %}
+    <script>
+    </script>
+{% endblock %}
